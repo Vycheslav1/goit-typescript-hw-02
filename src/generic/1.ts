@@ -4,9 +4,10 @@
 */
 
 function getPromise () {
-  return new Promise((resolve) => {
+  const promise: Promise<any[]>=new Promise((resolve) => {
     resolve(['Text', 50]);
   });
+  return promise; 
 }
 
 getPromise()

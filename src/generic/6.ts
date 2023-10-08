@@ -13,8 +13,9 @@ type User = {
   email: string;
   password: string;
 }
+type UserWithoutNameAndSurname = Omit<User, 'name'|'surname'>;
 
-function createOrUpdateUser(initialValues: User) {
+function createOrUpdateUser(initialValues:  UserWithoutNameAndSurname) {
   // Оновлення користувача
 }
 
