@@ -7,7 +7,7 @@
       title:string;
       }
 
-class Component <T>{
+class Component <T extends Title>{
   constructor (public props:T) {
 
   }

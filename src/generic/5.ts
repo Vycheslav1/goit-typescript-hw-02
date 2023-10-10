@@ -4,8 +4,8 @@
 */
 
 interface KeyValuePair{
-  key:any;
-  value:any;
+  key:string;
+  value:string;
 }
 
 export {};

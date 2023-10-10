@@ -20,21 +20,16 @@ const page2 = {
   status: 'close',
 }
 
-type Page1={
+type Page={
   title:string;
   lokes:number;
   accounts:string[];
   status:string;
-  details:object;
+  details?:object;
 }
 
-type Page2={
-  title:string;
-  likes:number;
-  accounts:string[];
-  status:string;
-}
 
-type Pages=Page1&Page2;
+
+
 
 export {};

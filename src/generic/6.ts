@@ -13,7 +13,7 @@ type User = {
   email: string;
   password: string;
 }
-type UserWithoutNameAndSurname = Omit<User, 'name'|'surname'>;
+type UserWithoutNameAndSurname = Pick<User, 'email'|'password'>;
 
 function createOrUpdateUser(initialValues:  UserWithoutNameAndSurname) {
   // Оновлення користувача
